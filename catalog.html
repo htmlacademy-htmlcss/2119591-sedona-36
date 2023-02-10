@@ -20,7 +20,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -105,7 +105,7 @@
 
           </fieldset>
           <button class="button button-blue button-filter" type="submit">Применить</button>
-          <button class="button button-transparen button-filter" type="submit">Сбросить</button>
+          <button class="button button-transparent button-filter" type="reset">Сбросить</button>
         </form>
       </section>
       <section class="search-results">
@@ -119,11 +119,11 @@
         <a class="button" href="#">
           <span class="visually-hidden">Несколько карточек на странице</span>
         </a>
-        <a href="#" class="button?">
+        <a class="button" href="#">
           <span class="visually-hidden">Одна карточка на странице</span>
         </a>
         <a href="#" class="button">
-          <span class="visually-hidden">Cписоком</span>
+          <span class="visually-hidden">Cписком</span>
         </a>
         <ul class="accomodation-list">
           <li class="accomodation-card">
@@ -138,7 +138,7 @@
             <p class="accomodation-card-stars">
               <span class="visually-hidden">Четыре звезды</span>
             </p>
-            <a class="button accomodation-card-button">Рейтинг: 8,5</a>
+            <p class="accomodation-card-rating">Рейтинг: 8,5</p>
           </li>
           <li class="accomodation-card">
             <a class="accomodation-card-link" href="#">
@@ -152,7 +152,7 @@
             <p class="accomodation-card-stars">
               <span class="visually-hidden">Четыре звезды</span>
             </p>
-            <a class="button accomodation-card-button">Рейтинг: 9,2</a>
+            <p class="accomodation-card-rating">Рейтинг: 9,2</p>
           </li>
           <li class="accomodation-card">
             <a class="accomodation-card-link" href="#">
@@ -166,7 +166,7 @@
             <p class="accomodation-card-stars">
               <span class="visually-hidden">Три звезды</span>
             </p>
-            <a class="button accomodation-card-button">Рейтинг: 6,9</a>
+            <p class="accomodation-card-rating">Рейтинг: 6,9</p>
           </li>
           <li class="accomodation-card">
             <a class="accomodation-card-link" href="#">
@@ -180,7 +180,7 @@
             <p class="accomodation-card-stars">
               <span class="visually-hidden">Две звезды</span>
             </p>
-            <a class="button accomodation-card-button">Рейтинг: 5,0</a>
+            <p class="accomodation-card-rating">Рейтинг: 5,0</p>
           </li>
         </ul>
         <ol class="pagination">
@@ -197,9 +197,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link">
-              <span>...</span>
-            </a>
+            <a class="pagination-link">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -213,9 +211,7 @@
           <label class="visually-hidden" for="newsletter-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
             required>
-          <button class="button newsletter-button" type="submit">
-            <span class="">Подписаться</span>
-          </button>
+          <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
