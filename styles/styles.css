@@ -18,7 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  color:#000000;
+  color: #000000;
   background-color: #FFFFFF;
 }
 
@@ -40,9 +40,11 @@ body {
 .button-blue {
   background-color: #82B3D3;
 }
+
 .button-green {
   background-color: #7DB54F;
-  }
+}
+
 .button-transparent {
   background-color: transparent;
 }
@@ -86,14 +88,17 @@ body {
 .main-index {
   text-align: center;
 }
+
 /*main-section-hero*/
 
 .hero {
-  background-color: #000000;
-  background-image: url("../images/hero-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-color: #416c8f;
+  background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
+  background-position: bottom center, center;
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
 }
+
 /*main-section-advantages*/
 
 .advantages-title {
@@ -179,6 +184,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
 }
+
 .search-description {
   color: #333333;
 }
@@ -197,7 +203,7 @@ body {
 .newsletter-index {
   color: #FFFFFF;
   background-image: url("../images/subscribe-background.jpg");
-  background-color: #000000;
+  background-color: #416c8f;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -211,7 +217,7 @@ body {
 
 .field {
   background: #F2F2F2;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -220,7 +226,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: #82B3D3;
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 /*FOOTER*/
@@ -229,7 +235,7 @@ body {
   list-style: none;
 }
 
-.contacts-phone{
+.contacts-phone {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
@@ -239,13 +245,13 @@ body {
 }
 
 /*MAIN-INNER*/
-.main-inner
 
 /*search-settings*/
+
 .search-settings {
   color: #FFFFFF;
   background-image: url("../images/filter-background.jpg");
-  background-color: #000000;
+  background-color: #416c8f;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -255,6 +261,7 @@ body {
   font-size: 60px;
   line-height: 78px;
 }
+
 .breadcrumbs {
   list-style: none;
 }
@@ -282,6 +289,7 @@ body {
 }
 
 /*search-results*/
+
 .search-results-title {
   font-weight: 700;
   font-size: 30px;
@@ -309,7 +317,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-
 }
 
 .accomodation-card-type {
@@ -339,8 +346,8 @@ body {
 
 .pagination {
   list-style: none;
-
 }
+
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
@@ -365,5 +372,4 @@ body {
   text-align: center;
   color: #000000;
   background-color: transparent;
-
 }
