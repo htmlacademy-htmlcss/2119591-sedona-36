@@ -14,17 +14,35 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  background-color: #F2F2F2;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100%;
   background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /*BUTTONS*/
 
 .button {
+  display: inline-block;
+  box-sizing: border-box;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -64,17 +82,46 @@ body {
   overflow: hidden;
 }
 
+
 /*HEADER*/
 
 .page-header {
+  display: flex;
   text-transform: capitalize;
+  padding: 0 70px;
+  height: 64px;
+}
+
+.header-logo {
+  position: relative;
+  margin-bottom: -6px;
+  margin-right: 30px;
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .navigation-list {
+  display: flex;
+  flex-direction: row;
+  width: 490px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.navigation-user {
+  max-width: 360px;
+  justify-content: end;
+  align-items: center;
+}
+
 .navigation-link {
+  display: inline-block;
+  padding: 20px 16px;
   color: inherit;
   font-weight: 700;
   font-size: 20px;
@@ -83,15 +130,27 @@ body {
   text-align: center;
 }
 
+.button-navigation {
+  padding: 8px 34px;
+}
+
 /*MAIN-INDEX*/
 
 .main-index {
   text-align: center;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 /*main-section-hero*/
 
 .hero {
+  box-sizing: border-box;
+  padding: 51px 370px;
+  height: 485px;
+  width: 1200px;
   background-color: #416c8f;
   background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
   background-position: bottom center, center;
@@ -101,7 +160,13 @@ body {
 
 /*main-section-advantages*/
 
+.advantages-container {
+  padding: 69px;
+}
+
 .advantages-title {
+  width: 620px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -109,15 +174,33 @@ body {
 }
 
 .advantages-description {
+  margin-bottom: 0;
   color: #333333;
 }
 
-.advantages-list{
+/*main-section-advantages-list*/
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .advantages-item {
+  width: 400px;
+  height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-big {
+  display: flex;
+  width: 100%;
+}
+
+.advantages-item-reverse {
+  flex-direction: row-reverse;
 }
 
 .advantages-item-town,
@@ -130,7 +213,13 @@ body {
   background: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-item-container {
+  width: 230px;
+  padding: 103px 85px;
+}
+
 .advantages-item-name {
+  margin-top: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -138,13 +227,20 @@ body {
 }
 
 .advantages-item-description {
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 21px;
 }
 
 /*main-section-infrastructure*/
 
+.infrastructure-container {
+  padding: 64px;
+}
+
 .infrastructure-title {
+  width: 505px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -152,11 +248,24 @@ body {
 }
 
 .infrastructure-description {
+  margin-bottom: 0;
   color: #333333;
 }
 
+/*main-section-infrastructure-list*/
+
 .infrastructure-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.infrastructure-item {
+  width: 400px;
+  min-height: 385px;
 }
 
 .infrastructure-item-accomodation,
@@ -165,6 +274,7 @@ body {
 }
 
 .infrastructure-item-name {
+  margin-top: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -172,13 +282,19 @@ body {
 }
 
 .infrastructure-item-description {
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 21px;
 }
 
 /*main-section-search*/
 
+.search {
+  padding: 96px 304px;
+}
+
 .search-title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -190,6 +306,9 @@ body {
 }
 
 .button-search {
+  min-height: 52px;
+  max-width: 100%;
+  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -197,6 +316,8 @@ body {
 /*main-section-newsletter*/
 
 .newsletter {
+  padding-top: 96px;
+  padding-bottom: 104px;
   text-align: center;
 }
 
@@ -208,7 +329,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.newsletter-text {
+  width: 475px;
+  margin: 0 auto;
+}
+
 .newsletter-title {
+  margin-top: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -231,6 +358,13 @@ body {
 
 /*FOOTER*/
 
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 70px 35px;
+}
+
 .footer-socials-list {
   list-style: none;
 }
@@ -249,14 +383,17 @@ body {
 /*search-settings*/
 
 .search-settings {
+  padding: 70px;
+  padding-top: 35px;
   color: #FFFFFF;
   background-image: url("../images/filter-background.jpg");
   background-color: #416c8f;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 .search-settings-title {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -272,7 +409,14 @@ body {
   line-height: 21px;
 }
 
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
 .catalog-filter-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -290,7 +434,18 @@ body {
 
 /*search-results*/
 
+.search-results {
+  padding: 50px 70px 60px;
+}
+
+.search-results-top {
+  display: flex;
+  width: 1060px;
+  margin-bottom: 40px;
+}
+
 .search-results-title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -305,7 +460,24 @@ body {
 }
 
 .accomodation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+  gap: 20px;
   list-style: none;
+}
+
+.accomodation-card {
+  box-sizing: border-box;
+  width: 340px;
+  min-height: 438px;
+  padding: 20px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .accomodation-card-link {
@@ -345,10 +517,20 @@ body {
 /*pagination*/
 
 .pagination {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
   list-style: none;
 }
 
 .pagination-link {
+  display: inline-block;
+  box-sizing: border-box;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
