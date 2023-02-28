@@ -87,14 +87,11 @@ body {
 
 .page-header {
   display: flex;
-  text-transform: capitalize;
   padding: 0 70px;
-  height: 64px;
 }
 
 .header-logo {
-  position: relative;
-  margin-bottom: -6px;
+  display: block;
   margin-right: 30px;
 }
 
@@ -106,11 +103,12 @@ body {
 
 .navigation-list {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   width: 490px;
   margin: 0;
   padding: 0;
   list-style: none;
+  text-transform: capitalize;
 }
 
 .navigation-user {
@@ -190,7 +188,7 @@ body {
 
 .advantages-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -256,7 +254,7 @@ body {
 
 .infrastructure-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -306,8 +304,6 @@ body {
 }
 
 .button-search {
-  min-height: 52px;
-  max-width: 100%;
   padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
@@ -462,7 +458,6 @@ body {
 .accomodation-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   margin-bottom: 80px;
