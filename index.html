@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -131,8 +133,8 @@
           </div>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" item-name="newsletter-email"
-              id="newsletter-email" required>
+            <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
+              required>
             <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
           </form>
         </section>
@@ -266,16 +268,16 @@
                 </svg>
               </button>
             </p>
-            <p class="field-group field-group-quantity">
+            <p class="field-group field-group-quantity field-group-quantity-children">
               <label class="search-form-label" for="children-quantity">
                 Дети:
-                <button class="info-tooltip-button" type="button" aria-labelledby="tooltip-label">
-                  <span class="visually-hidden">Посмотреть дополнительную информацию</span>
-                </button>
-                <span class="info-tooltip-text role=" tooltip" id="tooltip-label">Укажите количество детей, которые
-                  будут с вами, возраст которых от 6
-                  до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </label>
+              <button class="info-tooltip-button" type="button" aria-labelledby="tooltip-label">
+                <span class="visually-hidden">Посмотреть дополнительную информацию</span>
+              </button>
+              <span class="info-tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые
+                будут с вами, возраст которых от 6
+                до 18 лет. Дети до 6 лет размещаются бесплатно.Дети до 6 лет размещаются бесплатно.</span>
               <button class="quantity-button quantity-button-minus" type="button">
                 <span class="visually-hidden">Уменьшить</span>
                 <svg class="quantity-button-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
