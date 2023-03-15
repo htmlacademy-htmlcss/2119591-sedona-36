@@ -1461,8 +1461,13 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.tooltip {
+  position: relative;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
 .info-tooltip-button {
-  margin-right: 46px;
   display: inline-block;
   padding: 0;
   vertical-align: middle;
@@ -1474,13 +1479,13 @@ body {
 }
 
 .info-tooltip-text {
-  display: none;
   position: absolute;
-  right: 112px;
-  top: 407px;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 42px;
+  display: none;
   width: 216px;
-  min-height: 110px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 23px 22px;
   color: #ffffff;
   font-size: 16px;
   font-weight: normal;
