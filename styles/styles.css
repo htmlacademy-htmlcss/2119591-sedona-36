@@ -934,7 +934,7 @@ body {
   display: flex;
   gap: 32px;
   flex-direction: column;
-  justify-content: end;
+  margin-top: 56px;
 }
 
 .button-filter {
