@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -79,7 +81,7 @@
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="Wi-fi">
                       <span class="control-mark"></span>
-                      <span class="control-label">Wi-fi</span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                 </ul>
               </fieldset>
@@ -117,23 +119,24 @@
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range">
                   <label class="range-label">
-                    <input class="range-input range-from-input" type="number" value="0" name="min-price">
+                    <input class="range-input range-from-input" type="number" name="min-price" value="0" min="0">
                     <span>от</span>
                   </label>
                   <label class="range-label">
-                    <input class="range-input range-to-input" type="number" value="9000" name="max-price">
+                    <input class="range-input range-to-input" type="number" name="max-price" value="9000" min="0">
                     <span>до</span>
                   </label>
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 216px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену.</span>
                     </button>
                   </div>
+                </div>
               </fieldset>
               <div class="catalog-filter-buttons-wrapper">
                 <button class="button button-blue button-filter" type="submit">Применить</button>
@@ -145,21 +148,20 @@
         <section class="search-results">
           <div class="search-results-top">
             <h2 class="search-results-title">Найдено гостиниц:</h2>
-            <span class="search-results-title">38</span>
+            <span class="search-results-title search-results-title-number">38</span>
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="raiting">Сначала с высоким рейтингом</option>
             </select>
             <div class="search-results-view-container">
-              <a class="search-results-view search-results-view-selected search-results-view-tile" href="#"
-                type="button">
+              <a class="search-results-view search-results-view-selected search-results-view-tile" href="#">
                 <span class="visually-hidden">Несколько карточек на странице</span>
               </a>
-              <a class="search-results-view search-results-view-slideshow" href="#" type="button">
+              <a class="search-results-view search-results-view-slideshow" href="#">
                 <span class="visually-hidden">Одна карточка на странице</span>
               </a>
-              <a class="search-results-view search-results-view-list" href="#" type="button">
+              <a class="search-results-view search-results-view-list" href="#">
                 <span class="visually-hidden">Cписком</span>
               </a>
             </div>
@@ -174,7 +176,7 @@
                 <p class="accomodation-card-type">Гостиница</p>
                 <p class="accomodation-card-price">От 4000 ₽</p>
                 <a class="accomodation-card-button button" href="#">Подробнее</a>
-                <button class="button button-blue accomodation-card-button">В избранное</button>
+                <button class="button button-blue accomodation-card-button" type="button">В избранное</button>
                 <p class="accomodation-card-stars four-stars">
                   <span class="visually-hidden">Четыре звезды</span>
                 </p>
@@ -190,7 +192,7 @@
                 <p class="accomodation-card-type">Гостиница</p>
                 <p class="accomodation-card-price">От 5000 ₽</p>
                 <a class="accomodation-card-button button" href="#">Подробнее</a>
-                <button class="button button-green accomodation-card-button">В избранном</button>
+                <button class="button button-green accomodation-card-button" type="button">В избранном</button>
                 <p class="accomodation-card-stars four-stars">
                   <span class="visually-hidden">Четыре звезды</span>
                 </p>
@@ -206,7 +208,7 @@
                 <p class="accomodation-card-type">Гостиница</p>
                 <p class="accomodation-card-price">От 2500 ₽</p>
                 <a class="accomodation-card-button button" href="#">Подробнее</a>
-                <button class="button button-blue accomodation-card-button">В избранное</button>
+                <button class="button button-blue accomodation-card-button" type="button">В избранное</button>
                 <p class="accomodation-card-stars three-stars">
                   <span class="visually-hidden">Три звезды</span>
                 </p>
@@ -222,7 +224,7 @@
                 <p class="accomodation-card-type">Гостиница</p>
                 <p class="accomodation-card-price">От 1500 ₽</p>
                 <a class="accomodation-card-button button" href="#">Подробнее</a>
-                <button class="button button-blue accomodation-card-button">В избранное</button>
+                <button class="button button-blue accomodation-card-button" type="button">В избранное</button>
                 <p class="accomodation-card-stars two-stars">
                   <span class="visually-hidden">Две звезды</span>
                 </p>
@@ -254,11 +256,11 @@
         <section class="newsletter">
           <div class="newsletter-text">
             <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-            <p class="section-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           </div>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+            <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
               required>
             <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
           </form>
